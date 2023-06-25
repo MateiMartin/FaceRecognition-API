@@ -2,7 +2,7 @@
 
 ## Description
 
-FaceRecognition-API is a simple RESTful API built with Vite, Express, and PostgreSQL. This API serves as the backend for the FaceRecognition application.
+FaceRecognition-API is a simple RESTful API built Node, Express, and for the databse I used PostgreSQL. This API serves as the backend for the FaceRecognition application.
 
 ## Getting Started
 
