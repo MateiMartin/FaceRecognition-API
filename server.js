@@ -8,7 +8,6 @@ const knex = require('knex');
 const register = require('./controlers/register');
 const signin = require('./controlers/signin');
 const image = require('./controlers/image');
-const profile = require('./controlers/profile');
 const clarifai = require('./controlers/imageURL');
 
 const db = knex({
