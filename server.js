@@ -39,8 +39,6 @@ app.put('/image', (req, res) => { image.handelImage(req, res, db) });
 
 app.post('/imageUrl', (req, res) => { clarifai.handelApiCall(req, res) });
 
-app.get('/profile/:id', (req, res) => { profile.handelProfileGet(req, res, db) });
-
 app.listen(process.env.PORT || 3000, () => {
     console.log(`Server is running on port ${process.env.PORT || 3000}`);
 })
