@@ -9,6 +9,7 @@ const register = require('./controlers/register');
 const signin = require('./controlers/signin');
 const image = require('./controlers/image');
 const clarifai = require('./controlers/imageURL');
+const top = require('./controlers/top3');
 
 const db = knex({
     client: 'pg',
@@ -37,6 +38,8 @@ app.post('/register', (req, res) => { register.handelRegister(req, res, db, bcry
 app.put('/image', (req, res) => { image.handelImage(req, res, db) });
 
 app.post('/imageUrl', (req, res) => { clarifai.handelApiCall(req, res) });
+
+app.get('/top3', (req, res) => { top.top(req, res, db) });
 
 app.listen(process.env.PORT || 3000, () => {
     console.log(`Server is running on port ${process.env.PORT || 3000}`);
