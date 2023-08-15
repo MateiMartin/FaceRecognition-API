@@ -22,3 +22,5 @@ To use this API, you will need to set up the [FaceRecognition](https://github.co
 3. Configure the PostgreSQL database connection in the server configuration files.
 4. Start the server using the command `npm start`.
 
+<br/>
+*The site is not currently working because the database is not being maintained.
